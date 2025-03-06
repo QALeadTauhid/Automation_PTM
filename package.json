@@ -9,6 +9,8 @@
   "author": "QA",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.15.0"
+    "cypress": "^13.15.1",
+    "cypress-otp": "^1.0.3",
+    "mailslurp": "^0.0.1-security"
   }
 }

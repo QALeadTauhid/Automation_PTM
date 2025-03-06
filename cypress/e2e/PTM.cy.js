@@ -5,7 +5,7 @@ describe('PTM Project', () => {
       cy.title().should('eq', 'Online Business and Invoice Management: PayToMe')
     })
 
-    it('pasverify title negative', () => {
+    it('verify title negative', () => {
         cy.visit('https://www.paytome.co')
         cy.title().should('eq', 'Online Business and PTM Project: PayToMe')
       })
@@ -13,7 +13,9 @@ describe('PTM Project', () => {
 
     it('invoice-generator', () => {
         cy.visit('https://www.paytome.co/invoice-generator')
-        cy.contanis().should('eq', 'Create Your Own Invoice For Free!')
+        cy.get(".text-center.text-blue-prussian.banner-title").contains('Create Your Own Invoice For Free!')
+       
+
       })
 
 
